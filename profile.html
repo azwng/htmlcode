@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            height: 100vh; /* Chiếm toàn bộ chiều cao của cửa sổ trình duyệt */
+            margin: 0;
+            display: flex;
+            flex-direction: column; /* Sắp xếp các phần tử theo cột */
+        }
+        header {
+            width: 100%;
+            background-color: #d6d0d0;
+            color: white;
+            padding: 10px 20px; /* Thêm padding để tạo khoảng cách bên trong header */
+        }
+        .header-container {
+            max-width: 1200px; /* Giới hạn chiều rộng của container */
+            margin: 0 auto; /* Căn giữa container */
+            display: flex; /* Sử dụng Flexbox */
+            justify-content: space-between; /* Đẩy tiêu đề sang trái và menu sang phải */
+            align-items: center; /* Canh giữa theo chiều dọc */
+        }
+        h1 {
+            color: #333; /* Màu chữ cho tiêu đề */
+            font-size: 24px; /* Điều chỉnh kích thước chữ */
+        }
+        nav {
+            display: flex;
+        }
+        nav a {
+            color: #333;
+            text-decoration: none;
+            padding: 5px 10px;
+            margin-left: 20px; /* Thêm khoảng cách giữa các mục menu */
+        }
+        .main-content {
+            flex: 1; /* Chiếm toàn bộ không gian còn lại dưới header */
+            display: flex;
+
+        }
+        .left-section {
+            flex: 1; /* Chiếm 1 phần của tổng số 5 phần */
+            padding: 20px;
+            background-color: #e0e0e0; /* Màu nền của phần bên trái */
+            border-right: 1px solid #ddd; /* Đường phân cách giữa các phần */
+        }
+        .right-section {
+            
+            flex: 4; /* Chiếm 4 phần của tổng số 5 phần */
+            padding: 20px;
+            background-color: #f9f9f9; /* Màu nền của phần bên phải */
+            max-width: 100%; /* Giới hạn chiều rộng tối đa bằng chiều rộng của khung chứa */
+            box-sizing: border-box; /* Đảm bảo padding không làm tăng kích thước phần tử */
+            overflow: hidden; /* Ẩn nội dung nếu tràn khung */
+            
+        }
+        .icon-link{
+            font-size: 40px;
+            color: #333;
+        }
+        .giphy-embed{
+            align-items: center;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Welcome to Minh's website~</h1>
+            <nav>
+                <a href="lab1.html">Home</a>
+                <a href="profile.html">About me</a>
+                <a href="scoreboard.html">Score-board</a>
+                <a href="me.html">My profile</a>
+                <a href="news.html">News</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="main-content">
+        <div class="left-section">
+            <h1>About me</h1>
+            <br><br><h2>Sở thích</h2>
+            <ul>    
+                <li>Chơi CTF</li>
+                <li>Cầu lông</li>
+                <li>Đọc sách</li>
+                <li>Xem phim</li>
+            </ul>
+            <br><br><h2>More information</h2>
+            <a href="https://x.com/minhdth_" class="icon-link" target="_blank">
+                <i class="fa-brands fa-square-x-twitter"></i> 
+            </a>
+            <br>
+            <a href="https://github.com/azwng" class="icon-link" target="_blank">
+                <i class="fa-brands fa-github"></i> 
+            </a>
+            <br>
+            <a href="mailto:minhhoangdo3107@gmail.com?subject=Subject%20Here&body=Hello%20There,%0A%0AThis%20is%20the%20body%20of%20the%20email.%0A%0ABest%20regards,%0AYour%20Name"" class="icon-link" target="_blank">
+                <i class="fa-regular fa-envelope"></i> 
+            </a>
+
+
+        </div>
+        <div class="right-section">
+            <br><br><br>
+            <h2>Xin chào! Mình tên là Đỗ Thị Hoàng Minh.</h2>
+            <br>
+            <p>Mình hiện tại đang là sinh viên năm 4 - ngành An toàn Thông Tin tại Học Viện Kỹ Thuật Mật Mã.</p>
+            <p>Ngày sinh: 31/07/2003</p>
+
+            <p>Mình có đam mê với ngành An Toàn Thông Tin. Hiện tại mình đang là thực tập sinh Pentest tại VSEC - Công ty cổ phần An ninh mạng Việt Nam.</p>
+            <p>Mình đang theo đuổi về mảng Web exploitation.</p>
+            <p>Mình là một hacker mũ trắng. Công việc của mình là tìm kiếm những lỗ hổng trong trang web, hệ thống, phần mềm để giúp cho nhà phát triển và doanh nghiệp có thể có các cơ chế bảo vệ tài sản một cách tốt nhất.</p>
+            <br><br><br>
+            <iframe src="https://giphy.com/embed/YQitE4YNQNahy" width="1200" height="672" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+
+        </div>
+
+        
+    </div>
+</body>
+</html>

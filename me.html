@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A4 Page with Header, Icons, and Two Columns</title>
+    <!-- Add Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .page {
+            width: 210mm;
+            height: 297mm;
+            margin: auto;
+            position: relative;
+        }
+        .header {
+            width: 100%;
+            height: 50mm; /* Height of header */
+            background-color: #84a3e0;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start; /* Align items at the start */
+            position: relative;
+            overflow: visible;
+            padding: 0 10mm; /* Add padding to left and right */
+        }
+        .header img {
+            height: 95%; /* 4/5 of header height */
+            width: auto;
+            max-width: 30%; /* Ensure image does not take too much space */
+            position: relative;
+        }
+        .header-content {
+            flex: 1; /* Take up the remaining space */
+            padding-left: 10mm; /* Space between the image and the text */
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Center text vertically */
+        }
+        .header-content strong {
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+        }
+        .header-content p {
+            margin: 5px 0;
+            display: flex;
+            align-items: center;
+        }
+        .header-content p i {
+            margin-right: 8px; /* Space between icon and text */
+        }
+
+        .content {
+            display: flex;
+            width: 100%;
+            height: calc(100% - 50mm); /* Remaining height after header */
+        }
+        .left-section {
+            flex: 3; /* 3/5 of the width */
+            background-color: #ffffff;
+            padding: 10mm;
+        }
+        .right-section {
+            flex: 2.5; /* 2.5/5 of the width */
+            background-color: #ffffff;
+            padding: 10mm;
+        }
+        .back {
+            position: fixed;
+            bottom: 20px; /* Cách cạnh dưới 20px */
+            right: 20px; /* Cách cạnh phải 20px */
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <div class="header">
+            <img src="meee.jpg" alt="Header Image">
+            <div class="header-content">
+                <strong>ĐỖ THỊ HOÀNG MINH</strong>
+                <p></p>FRESHER PENTESTER</p>
+                <p>Mong muốn tìm được một môi trường để học tập và
+                    làm việc lâu dài, có thể tích lũy kiến thức, phát triển bản
+                    thân thông qua các dự án thực tế và trở thành nhân viên
+                    chính thức.</p>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="left-section">
+                <!-- Nội dung phần bên trái -->
+                <p><i class="fa-solid fa-graduation-cap"></i><b> HỌC VẤN</b></p>
+                <p>AN TOÀN THÔNG TIN</p>
+                <p>Học viện Kỹ Thuật Mật Mã</p>
+                <p>Sinh viên năm 4 - GPA: 2.95</p>
+                <br><br>
+
+                <p><i class="fa-solid fa-briefcase"></i><b> KINH NGHIỆM LÀM VIỆC</b></p>
+                <p>CÔNG TY CP AN NINH MẠNG VIỆT NAM </n>
+                <br>- Có kinh nghiệm kiểm thử các trang web của các tổ chức lớn.
+                    <br>- Có khả năng xây dựng các trang website cơ bản.</p>
+                <br><br>
+
+                <p><i class="fas fa-laptop-code"></i><b> HOẠT ĐỘNG</b></p>
+                <p>
+                    Thành viện CLB ATTT KMA<br>
+                    - Tham gia các giải CTF hàng tuần<br>
+                    - Tham gia các giải CTF lớn trong và ngoài nước<br>
+                    - Tham gia xây dựng trang web cho CLB<br>
+                    <br>
+                </p>
+                <br><br>
+
+                <p><i class="fa-solid fa-award"></i><b> THÀNH TÍCH</b></p>
+                <p>
+                    Giải nhì KMA CTF 2024
+                    <br>
+                </p>
+                <br><br>
+
+
+            </div>
+            <div class="right-section">
+                <p><i class="fas fa-laptop-code"></i><b> LIÊN HỆ</b></p>
+                <p><i class="fa-solid fa-phone"></i>  0362132800</b></p>
+                <p><i class="fa-regular fa-envelope"></i> minhhoangdo3107@gmail.com</b></p>
+                <p><i class="fa-solid fa-link"></i>https://vs.online.com</b></p>
+                <p><i class="fa-solid fa-location-dot"></i>   Hà Đông, Hà Nội</b></p>
+                <p><i class="fa-solid fa-cake-candles"></i>  31/07/2003</b></p>
+                <p><i class="fa-solid fa-mars-and-venus"></i> Nữ</b></p>
+                
+                <br><br>
+
+                <p><i class="fa-regular fa-square-check"></i><b> KỸ NĂNG</b></p>
+                
+                    <strong>Burpsuite</strong>
+                    <li>Sử dụng thành thạo công cụ Burpsuite.</li>
+                    <strong>Dev web</strong>
+    
+                    <li>Có thể xây dựng các trang web cơ bản bằng ngôn ngữ
+                        PHP hoặc JavaScript, HTML, CSS.</li>
+                    
+                    <strong>Tiếng Anh</strong>
+                    <li>Có thể đọc và hiểu được cơ bản tài liệu chuyên ngành
+                        bằng tiếng anh.</li>
+    
+                    <strong>PortSwigger</strong>
+                    <li>Hiểu được các khái niệm cơ bản, cách khai thác các loại
+                        tấn công SQL injection, XSS, File Upload, HTML
+                        injection...</li>
+    
+                    <strong>Python</strong>
+                    <li>Có thể sử dụng Python để viết lại các CTF solved scripts.</li>
+                
+                <br><br>
+
+                <p><i class="fa-solid fa-star"></i><b> SỞ THÍCH</b></p>
+                <li>Chơi CTF</li>
+                <li>Chơi cầu lông</li>
+                <li>Đọc sách</li>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="back">
+        <a href="lab1.html" class="back">Home</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: center; /* Căn giữa theo chiều ngang */
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+            max-width: 800px;
+            margin: auto;
+            margin-top: 20px;
+        }
+        .header .logo {
+            flex: 0 0 auto;
+            margin-right: 130px; /* Khoảng cách giữa logo và nội dung */
+            width: 45px; /* Giảm kích thước logo còn một nửa */
+            height: auto;
+        }
+        .header .content {
+            flex: 1;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+        }
+        .header .content1 {
+            flex: 1;
+            display: flex;
+            justify-content: space-between;
+            align-items: left;
+            text-align: left;
+        }
+        .header .left {
+            font-size: 16px;
+            font-weight: normal;
+
+        }
+        .header .left .bold {
+            font-weight: bold;
+        }
+        .header .right {
+            font-size: 16px;
+            font-weight: bold;
+        }
+        table {
+            width: 70%;
+            border-collapse: collapse;
+            margin: 20px auto;
+            font-size: 18px;
+            text-align: center;
+        }
+        th, td {
+            padding: 12px;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        .back {
+            position: fixed;
+            bottom: 20px; /* Cách cạnh dưới 20px */
+            right: 20px; /* Cách cạnh phải 20px */
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <img src="logo.jpg" alt="Logo" class="logo">
+        <div class="content">
+            <div class="left">
+                <div>Ban cơ yếu chính phủ</div>
+                <div class="bold">Học Viện Kỹ Thuật Mật Mã</div>
+            </div>
+            <div class="right">
+                <div>Cộng hòa xã hội chủ nghĩa Việt Nam</div>
+                <div>Độc Lập - Tự do - Hạnh phúc</div>
+            </div>
+        </div>
+    </header>
+    <div class="header">
+        <h1>BẢNG ĐIỂM HỌC TẬP</h1>
+    </div>
+    <header class="header">
+        <div class="content1">
+            <div class="left">
+                <p>Họ và tên: <b>ĐỖ THỊ HOÀNG MINH</b></p>
+                <p>Ngày sinh: <b>31/7/2003</b></p>
+                <p>Mã sinh viên: <b>AT180435</b></p>
+                <p>Ngành học: <b>An toàn thông tin</b></p>
+            </div>
+            <div class="left">
+                <br><br>
+                <p>Nơi sinh: <b>Hưng Yên</b></p>
+                <p>Hệ đào tạo: <b>Chính quy</b></p>
+                <p>Khóa học: <b>AT18</b></p>
+            </div>
+        </div>
+    </header>
+
+    <header class="header">
+        <h1>KẾT QUẢ HỌC TẬP</h1>
+    </header>
+
+    <table>
+        <thead>
+            <tr>
+                <th colspan="6">Năm học 2022-2023</th>
+            </tr>
+            <tr>
+                <th>STT</th>
+                <th>Tên học phần</th>
+                <th>Học kỳ</th>
+                <th>Đvht</th>
+                <th>ĐHP L1</th>
+                <th>ĐHP</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>1</th>
+                <th>Toán rời rạc</th>
+                <th>1</th>
+                <th>6</th>
+                <th></th>
+                <th>7.9</th>
+            </tr>
+            <tr>
+                <th>2</th>
+                <th>Tiếng Anh 2</th>
+                <th>1</th>
+                <th>4</th>
+                <th></th>
+                <th>7.9</th>
+            </tr>
+            <tr>
+                <th>3</th>
+                <th>Cơ sở lý thuyết truyền tin</th>
+                <th>1</th>
+                <th>2</th>
+                <th></th>
+                <th>5.5</th>
+            </tr>
+            <tr>
+                <th>4</th>
+                <th>Thể chất 3</th>
+                <th>1</th>
+                <th>4</th>
+                <th></th>
+                <th>Đạt</th>
+            </tr>
+            <tr>
+                <th>5</th>
+                <th>Vật lý đại cương A2</th>
+                <th>1</th>
+                <th>5</th>
+                <th></th>
+                <th>5.8</th>
+            </tr>
+            <tr>
+                <th>6</th>
+                <th>Quản trị mạng máy tính</th>
+                <th>1</th>
+                <th>2</th>
+                <th></th>
+                <th>6.8</th>
+            </tr>
+            <tr>
+                <th>7</th>
+                <th>Lịch sử Đảng cộng sản Việt Nam</th>
+                <th>1</th>
+                <th>3</th>
+                <th></th>
+                <th>7.5</th>
+            </tr>
+            <tr>
+                <th>8</th>
+                <th>Toán cao cấp A2</th>
+                <th>2</th>
+                <th>4</th>
+                <th></th>
+                <th>8.0</th>
+            </tr>
+            <tr>
+                <th>9</th>
+                <th>Lập trình căn bản</th>
+                <th>2</th>
+                <th>2</th>
+                <th></th>
+                <th>7.2</th>
+            </tr>
+            <tr>
+                <th>10</th>
+                <th>Toán chuyên đề</th>
+                <th>2</th>
+                <th>4</th>
+                <th></th>
+                <th>7.7</th>
+            </tr>
+            <tr>
+                <th>11</th>
+                <th>Công nghệ mạng máy tính</th>
+                <th>2</th>
+                <th>4</th>
+                <th></th>
+                <th>7.5</th>
+            </tr>
+            <tr>
+                <th>12</th>
+                <th>Tư tưởng Hồ Chí Minh</th>
+                <th>2</th>
+                <th>4</th>
+                <th>4.7</th>
+                <th>6.2</th>
+            </tr>
+            <tr>
+                <th>13</th>
+                <th>Xác suất thông kê</th>
+                <th>2</th>
+                <th>3</th>
+                <th></th>
+                <th>5.8</th>
+            </tr>
+            <tr>
+                <th>14</th>
+                <th>Phương pháp tính</th>
+                <th>2</th>
+                <th>4</th>
+                <th></th>
+                <th>7.2</th>
+            </tr>
+            <tr>
+                <th colspan="5">Điểm trung bình chung cả năm</th>
+                <th>7.1</th>
+            </tr>
+
+        </tbody>
+    </table>
+
+    <table>
+        <thead>
+            <tr>
+                <th colspan="6">Năm học 2023-2024</th>
+            </tr>
+            <tr>
+                <th>STT</th>
+                <th>Tên học phần</th>
+                <th>Học kỳ</th>
+                <th>Đvht</th>
+                <th>ĐHP L1</th>
+                <th>ĐHP</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>1</th>
+                <th>Lý thuyết mạng máy tính</th>
+                <th>3</th>
+                <th>3</th>
+                <th></th>
+                <th>5.7</th>
+            </tr>
+            <tr>
+                <th>2</th>
+                <th>An toàn mạng máy tính</th>
+                <th>3</th>
+                <th>2</th>
+                <th></th>
+                <th>6.7</th>
+            </tr>
+            <tr>
+                <th>3</th>
+                <th>Công nghệ web an toàn</th>
+                <th>3</th>
+                <th>3</th>
+                <th></th>
+                <th>9.5</th>
+            </tr>
+            <tr>
+                <th>4</th>
+                <th>Mã độc</th>
+                <th>2</th>
+                <th>2</th>
+                <th></th>
+                <th>8.0</th>
+            </tr>
+            <tr>
+                <th>5</th>
+                <th>Quản lý An toàn thông tin</th>
+                <th>2</th>
+                <th>2</th>
+                <th></th>
+                <th>7.9</th>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="back">
+        <a href="lab1.html" class="back">Home</a>
+    </div>
+
+</body>
+</html>

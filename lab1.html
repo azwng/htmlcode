@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            height: 100vh; /* Chiếm toàn bộ chiều cao của cửa sổ trình duyệt */
+            margin: 0;
+            display: flex;
+            flex-direction: column; /* Sắp xếp các phần tử theo cột */
+        }
+        header {
+            width: 100%;
+            background-color: #d6d0d0;
+            color: white;
+            padding: 10px 20px; /* Thêm padding để tạo khoảng cách bên trong header */
+        }
+        .header-container {
+            max-width: 1200px; /* Giới hạn chiều rộng của container */
+            margin: 0 auto; /* Căn giữa container */
+            display: flex; /* Sử dụng Flexbox */
+            justify-content: space-between; /* Đẩy tiêu đề sang trái và menu sang phải */
+            align-items: center; /* Canh giữa theo chiều dọc */
+        }
+        h1 {
+            color: #333; /* Màu chữ cho tiêu đề */
+            font-size: 24px; /* Điều chỉnh kích thước chữ */
+        }
+        nav {
+            display: flex;
+        }
+        nav a {
+            color: #333;
+            text-decoration: none;
+            padding: 5px 10px;
+            margin-left: 20px; /* Thêm khoảng cách giữa các mục menu */
+        }
+        .content {
+            flex: 1; /* Chiếm toàn bộ không gian còn lại */
+            display: flex;
+            flex-direction: column; /* Sắp xếp các phần tử theo chiều dọc */
+            justify-content: center; /* Căn giữa theo chiều ngang */
+            align-items: center; /* Căn giữa theo chiều dọc */
+            background-color: #f0f0f0; /* Màu nền của phần nội dung */
+            text-align: center; /* Căn giữa văn bản trong container */
+        }
+        .content img {
+            width: 80vw; /* Chiếm 80% chiều rộng của cửa sổ trình duyệt */
+            height: 500px;
+            width: 750px;
+        }
+        .content .script-text {
+            font-size: 16px; /* Kích thước chữ cho đoạn văn bản */
+            color: #333; /* Màu chữ cho đoạn văn bản */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Welcome to Minh's website~</h1>
+            <nav>
+                <a href="lab1.html">Home</a>
+                <a href="profile.html">About me</a>
+                <a href="scoreboard.html">Score-board</a>
+                <a href="me.html">My profile</a>
+                <a href="news.html">News</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="content">
+        <img src="meee.jpg" alt="Centered Image">
+        <div class="script-text">
+            <br>
+            <p>Đây là trang web của Đỗ Thị Hoàng Minh - MSV: AT180435</p>
+            <p>Thực hành làm lab môn Công nghệ web an toàn.</p>
+        </div>
+    </div>
+</body>
+</html>
